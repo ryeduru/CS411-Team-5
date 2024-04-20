@@ -1,9 +1,11 @@
 require("dotenv").config();
 const express = require("express");
 const axios = require("axios");
-
 const app = express();
 const port = process.env.PORT || 5000;
+const db = require('./db'); // This imports the database configuration
+const proute = require('./routes/playlists');
+const croute = require('./routes/concerts');
 
 // Middleware to log requests
 app.use((req, res, next) => {
