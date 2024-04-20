@@ -74,28 +74,8 @@ const App = () => {
   return (
     <div className="App">
       <h1>LiveBeat</h1>
-      <section>
-        <h2>My Spotify Playlists</h2>
-        <ul>
-          {playlists.map((playlist) => (
-            <li key={playlist.id}>
-              <strong>{playlist.name}</strong>
-              <p>{playlist.description}</p>
-            </li>
-          ))}
-        </ul>
-      </section>
-      <section>
-        <h2>Upcoming Concerts</h2>
-        <ul>
-          {concerts.map((concert) => (
-            <li key={concert.id}>
-              <strong>{concert.name}</strong>
-              <p>{concert.type}</p>
-            </li>
-          ))}
-        </ul>
-      </section>
+      <Playlists playlists={playlists} />
+      <Concerts concerts={concerts} />
     </div>
   );
 };
