@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./App.css";
-import Playlists from "./components/Playlists";
-import Concerts from "./components/Concerts";
+import Playlists from "./Playlists";
+import Concerts from "./Concerts";
 
 // import .env and then process.env.SPOTIFY_AUTH_TOKEN
 
